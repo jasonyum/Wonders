@@ -14,7 +14,7 @@ tumors.
 
 It's important to be skeptical of preclinical work, but the paper shows that AFP can be a logical target for CAR T-cell therapy in mice. That shows some potential. The way that CAR T-Cell Therapy works is by "programming" T cells to attack and kill tumor cells expressing a particular antigen. As it stands, however, the use of CAR T has been challenged by insufficient localization and an immunosuppressive microenvironment. Moreover, there are targeting issues. If you go off-target there are often toxicity implications -- **especially if the antigen is *not* unique to the tumor cell**. 
 
-AFP is not completely understood, but it's been associated with cell proliferation and apoptosis suppression. 
+AFP is not completely understood, but it's been associated with cell proliferation and apoptosis suppression.. making it a suspect in disease progression. Although AFP has been seen as a cancer-specific antigen, it's secreted and intracellular making it "un-druggable." 
 
 
 ### Definitions: 
