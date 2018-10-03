@@ -1,0 +1,102 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2017_conference,times}
+\usepackage[hang,flushmargin]{footmisc} 
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{fancyvrb}
+\usetikzlibrary{matrix,chains,positioning,decorations.pathreplacing,arrows}
+
+
+\title{10X+ Idea: Gene Editing\\
+ Sangamo Therapeutics}
+% is "Equity Screening possible here?" 
+% Classification of Technology Stocks 
+% Improving Equity Screens
+
+\author{Jason Yum, CFA\\ % \thanks{} \\
+Research Analyst  \\
+% Department of Computation \\
+Boston, USA \\
+}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+%\iclrfinalcopy % Uncomment for camera-ready version
+\begin{document}
+
+\maketitle
+
+\begin{abstract} 
+Sangamo is an early-stage, speculative biotech company that focuses on monogenic diseases, HIV, and CAR-T cancer treatments via gene editing. The annual revenue opportunity for monogenic diseases is more than \$10b, and includes large opportunities in hemophilia and lysosomal storage diseases. The therapeutic drug market for HIV is \$27b and for cancer it's over \$120b, suggesting an open-ended runway as Sangamo's technology proves itself. Achieving even a fraction of those TAMs is obviously aspirational, but early phase 1 and 2 data in humans seems promising, and the company's extensive list of partners includes the likes of Pfizer, Sanofi, Gilead, and Shire -- which partially validates Sangamo's core gene editing technology. Sangamo has a market cap of \$1.4b with no debt, and generated LTM revenues of \$58m. Assuming the cash burn rate stays at these levels, the company has approximately three to four years of cash operating expenses covered. 
+\end{abstract} 
+
+\section{Core Technology Description}   
+Sangamo's gene editing technology uses zinc finger proteins (ZFPs) to edit DNA. ZFPs are named after their structure, where a zinc ion stabilizes a coiled structure of amino acids into a finger-like shape. By engineering different orderings of these amino acids, Sangamo can target a matching gene sequence in someone's DNA (where a mutation is, for example). Stringing multiple ZFPs together allows for even greater precision and customization opportunities. 
+
+To make this more concrete, if you put your DNA sequence into a word document, it would look like a series of nucleotide bases (A,T,G,C, in some ordering). If you wanted to locate a specific area of the genome, you would control-F a specific letter combination. If you only searched for "ATGG" you would turn up hundreds of thousands of results, but if you searched for "ATGGCTAGCAATGTGGAA" you would turn up fewer. The longer your search query (the more ZFPs you string together), the more precise you can make your finding.
+
+Once a matching part of the DNA is found, a "cleaving" enzyme that's attached to the ZFP cuts the DNA open, and induces a deletion of a gene sequence. Alternatively, if there's a donor DNA sequence in place, the process adds a new gene sequence into the break. The picture below helps visualize the matching and cutting process using a zinc finger nuclease (ZFN = ZFP + cleaving enzyme).\footnote{There are two different DNA repair mechanisms that naturally occur in the body. One process is inherently mutagenic (sloppy) and is called "non-homologous end joining." This is where the body resolves a DNA break by pushing the strands back together, resulting in small deletions or insertions at the cleavage site. This can lead to a non-functional gene, which is desired when there's a negative mutation. The other process is called "homologous repair." This occurs when there's a "donor DNA" strand that the body can use as a template to correct the gene. During the gene editing process, Sangamo drops in a particular donor DNA strand, tricking the DNA repair process to add in a corrected gene sequence.} 
+
+\begin{figure}[h]
+\includegraphics[scale = 0.38]{zfn.png}
+\caption{ZFN locate and then cut the DNA}  
+\label{fig: industry}
+\end{figure} 
+
+\section{Product Differentiation Moat} 
+Sangamo's zinc finger protein technology offers the company better accuracy, efficiency, and specificity than rival technologies like CRISPR and TALENs. Accuracy refers to whether or not the ZFP can locate the matching DNA sequence, efficiency refers to the probability of cutting at the located site, and specificity refers to whether or not the ZFP makes unintended and dangerous cuts elsewhere in the genome. In addition, ZFPs naturally occur in the human body, lowering the possibility of an immune response.\footnote{CRISPR uses a bacteria-based Cas9 as its editing mechanism. Because Cas9 is foreign to the body, there's been some concerns over an immune response, and another paper that suggests successful edits using Cas9 biases replication toward cells with a non-functional copy of tumor suppressor p53. Cancer cells often lack a functional p53 protein, which is used to regulate cell mutations and induce cell death, leading to fears that CRISPR may induce cancer. In addition, CRISPR is functionally constrained by the length of its binding site, the PAM sequence, making it less flexible than ZFPs. TALENs are similar to ZFNs and use the same cleaving enzyme (Fok1) but use proteo-bacteria to alter gene transcription. Again, the usage of bacteria raises some immune response concerns and may lead to higher off-targets. TALENs, however, is simpler to engineer than ZFPs and may offer better commercial scale.} The main drawback around ZFPs is manufacturing difficulty, which poses questions around the ability to commercially scale a cure. 
+
+If the technology holds through safety and efficacy studies, gene editing aims to offer a one-time cure. Historically, patients and insurers have shown a strong preference for cures over frequent expensive treatments.\footnote{A good historical case study here would be Gilead's blockbuster drug, Sovaldi, which offered patients a cure to Hepatitis C. Before Sovaldi, the existing treatment regimen used interferon injections, which boosted immune systems but gave patients flu-like symptoms for months -- with no guarantee of success.} As an example, the current standard of care for individuals with the monogenic disease hemophilia includes a series of painful injections that are taken prophylactically (two to three times a week) or on-demand. Because of costs and convenience, the majority of patients use injections only when they experience a risky internal or external bleed. In lysosomal storage diseases like MPS I, the infusions only slow disease progression, with most patients dying painful deaths within years. A cure in either of these diseases would disrupt the therapeutic enzyme replacement market, but also serve as a blueprint for other gene editing applications. 
+
+At present, Sangamo has engineered thousands of different ZFPs, and the company claims they are able to target 2/3rds of the human genome. This library of ZFP combinations theoretically allows them to treat a wider scope of genetic mutations and is not recognized as an asset on the company's balance sheet. Unlike CRISPR, where the core IP is currently contested between the Broad Institute and Berkeley, Sangamo owns the IP around ZFPs and is not beholden to an academic institution.
+
+\section{Capital Allocation}
+
+Sangamo is pursuing some diseases on their own. These include inherited lysosomal storage diseases, as well as central nervous system therapies (mutations in the tau gene are linked to Parkinson's and Alzheimer's). 
+
+In much larger end-markets with established players, Sangamo has partnered with Pfizer, Bioverativ (owned by Sanofi), Shire and Gilead. This focus on partnerships brings drug approval and commercial expertise to Sangamo, and offers the company cash up-front and milestone payments to help with liquidity. As an example, the hemophilia agreement with Pfizer, Sangamo is responsible for the research through phase 2, and Pfizer is responsible for worldwide development, marketing, and commercialization of the drug. In exchange, Sangamo will also receive double digit royalties on global sales. 
+
+\begin{figure}[h]
+\includegraphics[scale = 0.38]{independent.png}
+\caption{Independent Pipeline: MPS I and MPS II are lysosomal storage diseases}  
+\label{fig: industry}
+\end{figure} 
+
+\begin{figure}[h]
+\includegraphics[scale = 0.38]{partnerships.png}
+\caption{Partnerships in Pipeline: HIV partnerships are done with universities}  
+\label{fig: industry}
+\end{figure} 
+
+Management has suggested that their goal is to work with larger companies to help with financing drug development, with the idea that by achieving proof-of-concept, additional opportunities across other diseases will open up. If that happens, the inherent flexibility of ZFPs could open up strong reinvestment opportunities as incremental end markets are addressed. 
+
+\section{Management}
+
+The C-suite is incentivized with a base salary, as well as both cash incentives and equity compensation. Bonus awards are determined by firm results (whether specific milestones were hit in their lead indications) and on individual goals. Relative to other companies, the proxy statement outlines both firm and individual goals in detail. Management and directors own $<$ 2\% of the company. 
+
+\begin{enumerate}
+
+\item The CEO is Dr. Alexander Macrae, who has twenty years of experience in the pharmaceutical industry. He was the Global Medical Officer of Takeda between 2012 and 2016. Before that, he spent 11 years at GSK, where he was a senior vice president of emerging markets R\&D. It seems that he was brought in because of his experience getting drugs through the approval process, something that the previous CEO struggled with.\footnote{The previous CEO was Edward Lanphier, who spent 22 years as the founder and CEO of Sangamo. He was replaced in 2016, and did not elect to remain on the board in the following year. } 
+
+\smallskip
+\item The CFO is Kathy Yi, where she was previously the head of finance at Novartis for three years. Before that, she was a finance director at Life Technologies. She has 17 years of experience in corporate finance, and an undergraduate degree in chemical engineering and an MBA from Columbia. 
+
+\smallskip
+\item The CMO is Dr. Edward Conner, who has 10 years of experience in early stage and late stage clinical development. Before joining Sangamo, he was a VP of Clinical Sciences at Ultragenyx Pharmaceuticals. Previous to that role, he was a senior medical director at Biomarin Pharmaceuticals. He also served as a Medical Director at Genentech.   
+\end{enumerate}
+
+\section{Risks} 
+Sangamo has been around for over 23 years, and they haven't produced a single commercial drug. The overarching risk is technological and biological. The technological question is: do ZFPs work consistently and without health complications? The biological question is: has our collective understanding of genetics reached a point where we know that disease mutation X is the primary cause for disease expression Y? Hiccups in the technology would be an existential threat to Sangamo.\footnote{A famous case study that outlines both the technological and biological challenges is known as the "Berlin Patient" which refers to an incident in 2007-2008 where a patient named Timothy Brown was given a bone marrow transplant with a mutated CCR5 protein. Individuals who have a mutated CCR5 protein are resistant to HIV.  Subsequent to receiving the transplant Timothy's HIV was functionally cured. Transplants of this type are risky and expensive due to immune reactions that can occur. Following this result, Sangamo attempted to create an HIV drug using ZFPs, and was able to successfully create mutations in only a portion of the patient's CCR5 proteins, but not fast enough or in sufficient quantity to deliver permanent results. The attempt ultimately failed, but the company continues to pursue HIV cures with academic institutions.}
+
+The other risk is competitive. Other companies are attempting to work with gene editing or gene therapy techniques. Gene editing competitors include Crispr Therapeutics, Editas Medicine, and Intellia Therapeutics. In gene therapy, competitors include large companies like Biomarin, who are notably pursuing hemophilia, and others like Spark Therapeutics, who notably created the first FDA approved gene therapy drug, Luxturna.\footnote{It should be noted that gene therapy companies do not attempt a double strand break in the cells, but rather inject a piece of DNA that floats inside the cell. Even still, there are risks associated with these techniques. In 2000, there was a complication with a gene therapy trial that was meant to treat a defective IL2RG gene. Although the gene was successfully introduced to the cell, some patients developed leukemia because the virus vector behaved unexpectedly.} 
+
+The company's small size means that it can be affected by external shocks in the broader financing environment. In addition, the partnership agreements the company has with Shire, Sanofi, Gilead, and Pfizer can all be cancelled without warning. A loss of confidence in the technology in one area of research can lead to a loss of confidence in other areas, leading to quick reversals in its liquidity position. The lack of visibility into future cash flows also limits the company's ability to raise debt financing, increasing the risk of future equity raises at unattractive prices. Finally, although the company is somewhat diversified along end-markets, it is exposed to concentrated technological risk.
+
+\bibliography{iclr2017_conference}
+\bibliographystyle{iclr2017_conference}
+
+\end{document}
